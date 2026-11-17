@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@theme { --font-sans: "Inter", "Noto Sans JP", system-ui, -apple-system, sans-serif; }
+@layer base { body { margin:0; background:#0d0f18; color:#f8fafc; } button,a,input { -webkit-tap-highlight-color:transparent; } button:not(:disabled),a { cursor:pointer; } button:focus-visible,a:focus-visible,input:focus-visible { outline:2px solid #c4b5fd; outline-offset:4px; } button:disabled { opacity:.45; cursor:not-allowed; } }
+.cover { background:radial-gradient(ellipse at 85% 15%,#c4b5fd 0,transparent 45%),linear-gradient(145deg,#7c3aed,#4c1d95 55%,#b794f4); position:relative;overflow:hidden; }
+.cover:after { content:"";position:absolute;width:140%;height:80%;border-radius:50%;background:linear-gradient(170deg,#c4b5fd55,#a78bfa00);transform:rotate(-28deg);left:-20%;top:40%;border-top:1px solid #ddd6fe80; }
